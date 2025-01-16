@@ -38,6 +38,28 @@ public class Program
         }
         return qCopy;
     }
+public static bool CheckQNum(Queue<int> q, int num)
+{
+    Queue<int> qCopy = SetQCopy(q);
+    bool inQ = false;
+    while(!qCopy.IsEmpty())
+    {
+        if (qCopy.Remove() == num)
+            inQ = true;
+    }
+    return inQ;
+}
 
+public static bool ChekPlaceQSum(Queue<int> q, int place)
+{
+    Queue<int> qCopy = SetQCopy(q);
+    bool QSum;
+    if (place == 1)
+    QSum = false;
+    while(!qCopy.IsEmpty())
+    {
+        if(
 
+    }
+}
 }
